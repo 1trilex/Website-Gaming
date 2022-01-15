@@ -1,0 +1,66 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>TIGGER.RO</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+<script src="jq.js"></script>
+<script src="jm.js"></script>
+</head>
+<body>
+<center>
+
+<div id="bg1"></div>
+
+<table id="content">
+<tr>
+<td colspan="3" align="center">
+<div id="logo"></div>
+<div style="height: 100px;"></div>
+</td>
+</tr>
+<tr>
+<td class="buttonPlace">
+<div id="forum" class="button"></div>
+</td>
+<td class="buttonPlace">
+<div id="servers" class="button"></div>
+</td>
+<td class="buttonPlace">
+<div id="shop" class="button"></div>
+</td>
+</tr>
+</table>
+
+<div id="steam" class="downButton"></div>
+
+</center>
+
+
+<div id="blackScreen"></div>
+
+<script>
+	jm.setScreen("black");
+	jm.position.pageCenter("#content");
+	window.onload = function(){jm.fade.out(1500);}
+
+	jm.mouseMove.css("#forum", "background-position-y: -376px", "background-position-y: -301px");
+	jm.mouseMove.css("#servers", "background-position-y: -226px", "background-position-y: -151px");
+	jm.mouseMove.css("#shop", "background-position-y: -75px", "background-position-y: 0px");
+	
+	
+	$("#forum").click(function(){document.location.href="http://tigger.ro/forum"});
+    $("#servers").click(function(){document.location.href="http://tigger.ro/servers"});
+    $("#panel").click(function(){document.location.href="http://tigger.ro/panel"});
+    $("#steam").click(function(){document.location.href="https://discord.gg/wqcuK6k"});
+
+	//
+	$(".downButton").mouseleave(function(){$(this).animate({bottom: 10}, 250);});
+	$(".downButton").mouseleave(function(){$(this).animate({bottom: 10}, 250);});
+	//
+	
+	
+</script>
+</body>
+</html>

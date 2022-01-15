@@ -1,0 +1,55 @@
+body{
+	background-color: black;
+}
+#bg1{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background: url("images/bg1.png");
+	opacity: 0.7;
+}
+
+#logo{
+	background: url("images/logo.png");
+	width: 500px; 
+	height: 100px;
+}
+.buttonPlace{
+	padding:0px 30px 0px 30px;
+}
+.button{
+	width: 260px;
+	height: 75px;
+	cursor: pointer;
+	background: url("images/buttons2.png"); 
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#forum{
+	background-position-y: -301px;
+}
+#servers{
+	background-position-y: -151px;
+}
+#shop{
+	background-position-y: 0px;
+}
+.downButton{
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	bottom: 10px;
+	cursor: pointer;
+}
+#vk{
+	background: url("images/vk.png");
+	right: 50%;
+	margin-right: 5px; 
+}
+#steam{
+	background: url("images/steam.png");
+	left: 50%;
+	margin-left: 5px; 
+}
